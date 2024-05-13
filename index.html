@@ -6,8 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0e35ab6147.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        .font-dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+
 </head>
-<body>
-    <h1 class="text-5xl text-red-500">hello</h1>
+<body class="font-dancing-script">
+    
+    <!-- nav -->
+    <nav class="p-6 items-center">
+        <div class="flex flex-wrap items-center justify-between">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse ml-32">
+                <img src="./asserts/company-logo.svg" class="h-14" alt="Flowbite Logo" />
+            </a>
+
+            <div class="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse relative mr-60">
+                <div class="flex flex-row items-center space-x-16 mr-12 text-3xl">
+                    <h1>Blog</h1>
+                    <h1>About us</h1>
+                    <h1>Menu</h1>
+                    <h1>Access</h1>
+                </div>
+
+                <div class="flex items-center space-x-12">
+                    
+                    <div class="bg-black w-1 h-12"></div>
+                    <button type="button" class="text-3xl bg-black text-white h-12 w-32 rounded-xl">Kirish</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    
+
+    <div class="relative w-full h-80" style="background-image: url('./asserts/section.png'); background-size: cover; background-position: center; height: 90vh;">
+        <div class="absolute inset-0 flex p-40">
+            <p class="text-8xl font-bold  text-zinc-500">Your Text Here</p>
+        </div>
+    </div>
 </body>
 </html>
