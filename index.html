@@ -192,70 +192,129 @@
     <!-- menu-end -->
 
 
-    <!-- menu 2 -->
+    <!-- map -->
     <div>
         <div class="grid grid-cols-12 pt-16 pb-16">
     
             <div class=" col-span-1 p-11"></div>
     
             <!-- left content -->
-            <div class="col-span-4 p-11">
-                <div class="relative " style="background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./asserts/menu-tem-1.png); background-size: cover; background-position: center; 
-                height: 528px; width: 425.141px; ">
-                </div>
+            <div class="flex flex-col col-span-4 p-11">
+                <h1 class="text-6xl text-center mb-6" style="width: 450px;">Access</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2201.4800510757295!2d69.53226130457813!3d41.31090893073936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae562bbe77afe1%3A0x8f8c8c8697755afd!2s8G6J%2BM2G%2C%20Yangibazar%2C%20Tashkent%20Region%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1715661627978!5m2!1sen!2s" 
+                width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </div>
-    
-    
-            <div class="col-span-6">
-                <!-- Card in the center -->
-                <div class="grid justify-center items-center w-60 mx-auto">
-                    <div class="overflow-hidden relative rounded-md flex flex-col justify-center items-center">
-                        <img src="./asserts/menu-tem-1.png" alt="item 1" class="w-full sm:h-32 object-cover rounded-md">
-                    </div>
-                    <div class="flex justify-between mt-4 items-center">
-                        <h2 class="text-3xl">Cut</h2>
-                        <h2>5000-</h2>
-                    </div>
-                    <p class="text-sm mt-4">長年の経験によって磨かれた確実な技術によってお客様を満足させるヘアスタイルとカットを提供しております。</p>
-                    
-                </div>
-                
             
+            <!-- right content -->
+            <div class="col-span-6 mt-32">            
                 <!-- Flexed container for the next line of cards -->
-                <div class="flex justify-center mt-12 gap-12">
-                    <div class="grid justify-center items-center w-56">
-                        <div class="overflow-hidden relative rounded-md">
-                            <div id="map"></div>
-
-    
-                        </div>
-                        <div class="flex justify-between mt-4 items-center">
-                            <h2 class="text-3xl">Cut</h2>
-                            <h2>5000-</h2>
-                        </div>
-                        <p class="text-sm mt-4">長年の経験によって磨かれた確実な技術によってお客様を満足させるヘアスタイルとカットを提供しております。</p>
-                    </div>
-            
-                    <div class="grid justify-center items-center w-56">
-                        <div class="overflow-hidden relative rounded-md">
-                            <img src="./asserts/menu-tem-1.png" alt="item 1" class="w-full sm:h-32 object-cover rounded-md">
-                        </div>
-                        <div class="flex justify-between mt-4 items-center">
-                            <h2 class="text-3xl">Cut</h2>
-                            <h2>5000-</h2>
-                        </div>
-                        <p class="text-sm mt-4">長年の経験によって磨かれた確実な技術によってお客様を満足させるヘアスタイルとカットを提供しております。</p>
-                    </div>
-                </div>
-    
-                <div class="flex justify-center items-center mt-20">
-                    <button class="text-2xl border border-black w-32 h-12">See all</button>
+                <div class="grid mt-12 gap-12">
+                    <ul class="text-xl">
+                        <li class="mb-4 border-b border-zinc-500 pb-6">
+                            <div class="flex space-x-12 justify-between flex-grow">
+                                <div class="flex space-x-8">
+                                    <h1 class="opacity-55">住所</h1>
+                                </div>
+                                <a href="" class="text-2xl">〒111-2222</a>
+                            </div>
+                        </li>
+                        <li class="mb-4 border-b border-zinc-500 pb-6">
+                            <div class="flex space-x-12 justify-between flex-grow">
+                                <div class="flex space-x-8">
+                                    <h1 class="opacity-55">電話番号</h1>
+                                </div>
+                                <a href="" class="text-2xl">〒111-2222</a>
+                            </div>
+                        </li>
+                        <li class="mb-4 border-b border-zinc-500 pb-6">
+                            <div class="flex space-x-12 justify-between flex-grow">
+                                <div class="flex space-x-8">
+                                    <h1 class="opacity-55">定休日</h1>
+                                </div>
+                                <a href="" class="text-2xl">〒111-2222</a>
+                            </div>
+                        </li>
+                        <li class="mb-4 border-b border-zinc-500 pb-6">
+                            <div class="flex space-x-12 justify-between flex-grow">
+                                <div class="flex space-x-8">
+                                    <h1 class="opacity-55">営業時間</h1>
+                                </div>
+                                <a href="" class="text-2xl">〒111-2222</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
         </div>
     </div>
-    <!-- menu-end -->
+    <!-- map-end -->
+
+    <!-- reservation -->
+    <div class="bg-black text-white pt-16 pb-16">
+        <div class="">
+            <h1 class="text-6xl text-center mb-6">Reservation</h1>
+            <p class="text-center mt-12 text-lg">ご予約について</p>
+            <p class="text-center text-lg mt-6">サロンのご予約は電話またはインターネット予約が可能です。</p>
+            <p class="text-center text-lg mt-1">お急ぎの場合はお電話でご予約ください。</p>
+            <div class="text-center mt-8">
+                <button type="button" class="text-sm border border-white text-white rounded-3xl mr-8 p-3 pr-8 pl-8">ネットで予約</button>
+                <button type="button" class="text-sm border border-white text-white rounded-3xl mr-8 p-3 pr-8 pl-8"><i class="fa-solid fa-phone"></i> 000-0000-0000</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- reservation-end -->
+
+    <!-- form -->
+    <div class="bg-black pt-12 pb-12 pl-36 pr-36">
+        <div class="text-black text-center flex flex-col justify-center items-center">
+            <img src="./asserts/form.png" alt="form image" class="w-auto h-auto">
+        </div>
+    </div>
+    <!-- form-end -->
+
+    <!-- footer -->
+    <div class="pl-36 pr-36 pb-8 pt-8 text-white" style="background-color: #615E5F;">
+        <div class="grid grid-cols-3 gap-32">
+            <div class="col-span-1 ">
+                <h1 class="text-6xl mt-12 ">Logo</h1>
+            </div>
+            <div class="col-span-1">
+                <div class="grid grid-cols-4 text-3xl">
+                    <h1 class="mt-4">Menu</h1>
+                    <h1 class="mt-4">Blog</h1>
+                    <h1 class="mt-4">Gallery</h1>
+                    <h1 class="mt-4">Faq</h1>
+            
+                    <h1 class="mt-4">Menu</h1>
+                    <h1 class="mt-4">Blog</h1>
+                    <h1 class="mt-4">Gallery</h1>
+                    <h1 class="mt-4">Faq</h1>
+            
+                    <h1 class="mt-4">Menu</h1>
+                    <h1 class="mt-4">Blog</h1>
+                    <h1 class="mt-4">Gallery</h1>
+                    <h1 class="mt-4">Faq</h1>
+                    
+                    <h1 class="mt-4">Menu</h1>
+                    <h1 class="mt-4">Blog</h1>
+                    <h1 class="mt-4">Gallery</h1>
+                    <h1 class="mt-4">Faq</h1>
+                </div>
+
+            </div>
+            <div class="col-span-1 text-lg">
+                <div class="mt-4">
+                    <a href="" class="">プライバシーポリシー</a>
+                </div>
+
+                <div class="mt-12">
+                    <h1>Copyright © Logo, Inc., All rights reserved.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-end -->
 
 
 <!-- prettier-ignore -->
