@@ -22,27 +22,39 @@
 
 <body class="font-ooh-baby">
     <!-- nav -->
-    <nav class="p-6 items-center">
-        <div class="flex flex-wrap items-center justify-between">
-            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse ml-32">
+    <nav class="p-6 bg-white shadow-md">
+        <div class="flex items-center justify-between">
+            <!-- Logo on the Left -->
+            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse ml-4 md:ml-32">
+
+
                 <img src="./asserts/company-logo.svg" class="h-14" alt="Flowbite Logo" />
             </a>
 
-            <div class="flex items-center  relative mr-52">
-                <div class="flex flex-row items-center space-x-16 mr-12 text-3xl">
-                    <h1><a href="./blog-list.html">Blog</a></h1>
-                    <h1><a href="http://127.0.0.1:5500/index.html#About">About us</a></h1>
-                    <h1><a href="http://127.0.0.1:5500/index.html#Menu">Menu</a></h1>
-                    <h1><a href="http://127.0.0.1:5500/index.html#Access">Access</a></h1>
+            <!-- Navigation Links -->
+            <div class="hidden items-center relative md:flex" id="menu">
+                <div
+                    class="flex flex-col md:flex-row md:items-center md:space-x-16 text-xl md:text-3xl text-center md:text-left">
+                    <h1 class="mt-4 md:mt-0"><a href="./blog-list.html">Blog</a></h1>
+                    <h1 class="mt-4 md:mt-0"><a href="http://127.0.0.1:5500/index.html#About">About us</a></h1>
+                    <h1 class="mt-4 md:mt-0"><a href="http://127.0.0.1:5500/index.html#Menu">Menu</a></h1>
+                    <h1 class="mt-4 md:mt-0"><a href="http://127.0.0.1:5500/index.html#Access">Access</a></h1>
                 </div>
 
-                <div class="flex items-center space-x-12">
+                <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-12 mt-4 md:mt-0">
+                    <div class="md:bg-black md:w-1 md:h-12 hidden md:block md:ml-12"></div>
 
-                    <div class="bg-black w-1 h-12"></div>
-                    <button type="button" class="text-xl bg-black text-white h-12 w-36 rounded-3xl"><a href="http://127.0.0.1:5500/index.html#Booking" class="text-lg">ご予約はこちら</a></button>
+
+                    <button type="button" class="text-lg bg-black text-white py-2 px-8 rounded-3xl mt-4 md:mt-0">
+                        <a href="http://127.0.0.1:5500/index.html#Booking" class="text-lg">ご予約はこちら</a>
+                    </button>
                 </div>
             </div>
+
+            <!-- Burger Icon on the Right for Mobile -->
+            <i class="fa-solid fa-bars text-xl md:hidden px-4 cursor-pointer" id="burger"></i>
         </div>
+
     </nav>
     <!-- nav end -->
 
@@ -50,114 +62,51 @@
     <div class="relative w-full "
         style="background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./asserts/section.png); background-size: cover; background-position: center; height: 25vh;">
         <div class="absolute inset-0 flex justify-center">
-            <p class="text-8xl text-black mt-16">Blog</p>
+            <p class="text-6xl md:text-8xl text-black mt-16">Blog</p>
         </div>
     </div>
     <!-- image section end -->
 
     <!-- blog-content -->
-    <div class="pt-12 pb-12 pl-36 pr-36 justify-center items-center">
-        <ul class="text-2xl">
+    <div class="md:pt-12 md:pb-12 md:pl-36 md:pr-36 justify-center items-center">
+        <ul class="text-base md:text-2xl mt-6">
 
             <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
+                <div class="flex  justify-between flex-grow">
                     <div class="flex space-x-8">
 
                         <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
+                        <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani</p>
+                        <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
                     </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="./blog.html" class="text-4xl opacity-35 hidden"><i
+                            class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </li>
 
             <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
+                <div class="flex  justify-between flex-grow">
                     <div class="flex space-x-8">
 
                         <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
+                        <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani</p>
+                        <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
                     </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="./blog.html" class="text-4xl opacity-35 hidden"><i
+                            class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </li>
 
             <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
+                <div class="flex  justify-between flex-grow">
                     <div class="flex space-x-8">
 
                         <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
+                        <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani</p>
+                        <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
                     </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </li>
-            <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
-                    <div class="flex space-x-8">
-
-                        <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
-                    </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </li>
-            <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
-                    <div class="flex space-x-8">
-
-                        <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
-                    </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </li>
-            <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
-                    <div class="flex space-x-8">
-
-                        <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
-                    </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </li>
-            <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
-                    <div class="flex space-x-8">
-
-                        <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
-                    </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </li>
-            <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
-                    <div class="flex space-x-8">
-
-                        <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
-                    </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </li>
-            <li class="mb-4 border-b border-zinc-500 pb-6">
-                <div class="flex space-x-12 justify-between flex-grow">
-                    <div class="flex space-x-8">
-
-                        <h1 class="opacity-35">2023/02/11</h1>
-                        <p class="border-2 border-black flex w-24 items-center justify-center">Nani</p>
-                        <a href="./blog.html" class="text-3xl">Nani category</a>
-                    </div>
-                    <a href="./blog.html" class="text-4xl opacity-35"><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="./blog.html" class="text-4xl opacity-35 hidden"><i
+                            class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </li>
         </ul>
@@ -254,6 +203,7 @@
     </div>
     <!-- footer-end -->
 
+    <script src="./index.js"></script>
 </body>
 
 </html>
