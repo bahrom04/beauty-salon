@@ -6,30 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Name</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/0e35ab6147.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap" rel="stylesheet">
 
     <style>
-        .font-ooh-baby {
-            font-family: "Oooh Baby", cursive;
+        .font-poly {
+            font-family: "Poly", cursive;
         }
     </style>
 
 </head>
 
-<body class="font-ooh-baby">
+<body class="font-poly">
 
     <!-- nav -->
-    <nav class="p-6 bg-white shadow-md">
+    <nav class="p-6 bg-black text-white shadow-md">
         <div class="flex items-center justify-between">
             <!-- Logo on the Left -->
             <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse ml-4 md:ml-32">
 
-
-                <img src="./asserts/company-logo.svg" class="h-14" alt="Flowbite Logo" />
+                <h1 class="text-3xl md:text-6xl">Logo</h1>
             </a>
 
             <!-- Navigation Links -->
@@ -43,10 +43,10 @@
                 </div>
 
                 <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-12 mt-4 md:mt-0">
-                    <div class="md:bg-black md:w-1 md:h-12 hidden md:block md:ml-12"></div>
+                    <div class="md:bg-white md:w-1 md:h-12 hidden md:block md:ml-12"></div>
 
 
-                    <button type="button" class="text-lg bg-black text-white py-2 px-8 rounded-3xl mt-4 md:mt-0">
+                    <button type="button" class="text-lg bg-red-800 text-white py-2 px-8 rounded-3xl mt-4 md:mt-0">
                         <a href="http://127.0.0.1:5500/index.html#Booking" class="text-lg">ご予約はこちら</a>
                     </button>
                 </div>
@@ -62,87 +62,99 @@
 
     <!-- image section -->
     <div class="relative w-full"
-        style="background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(./asserts/section.png); background-size: cover; background-position: center; height: 90vh;">
+        style="background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(./asserts/salon_2.png); background-size: cover; background-position: center; height: 90vh;">
         <div class="absolute inset-0 flex items-center justify-center p-6 md:p-20">
             <p class="text-6xl md:text-9xl lg:text-9xl text-white text-center">Salon Name</p>
         </div>
     </div>
     <!-- image section end -->
 
-
     <!-- blog list -->
-    <div class="grid">
-        <h1 class="text-6xl mt-6 flex justify-center items-center md:pt-16 md:pb-16 ">Blog</h1>
-
-        <div class="mt-12 p-2 justify-center items-center md:pl-80 md:pr-80">
-            <ul class="text-base md:text-2xl">
-
-                <li class="mb-4 border-b border-zinc-500 pb-6">
-                    <div class="flex  justify-between flex-grow">
-                        <div class="flex space-x-8">
-
-                            <h1 class="opacity-35">2023/02/11</h1>
-                            <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani</p>
-                            <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
-                        </div>
-                        <a href="./blog.html" class="text-4xl opacity-35 hidden"><i
-                                class="fa-solid fa-arrow-right"></i></a>
+    <div class="background-brown md:p-32">
+        <div class="bg-white md:p-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Blog Header and Button -->
+                <div class="col-span-1 flex flex-col items-center md:items-start text-center md:text-left p-4">
+                    <h1 class="text-4xl md:text-6xl">お知らせ</h1>
+                    <div class="flex justify-center md:justify-start items-center mt-8 mb-8">
+                        <button class="text-2xl border border-black w-32 h-12">
+                            <a href="./blog-list.html">See all</a>
+                        </button>
                     </div>
-                </li>
-
-                <li class="mb-4 border-b border-zinc-500 pb-6">
-                    <div class="flex  justify-between flex-grow">
-                        <div class="flex space-x-8">
-
-                            <h1 class="opacity-35">2023/02/11</h1>
-                            <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani</p>
-                            <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
-                        </div>
-                        <a href="./blog.html" class="text-4xl opacity-35 hidden"><i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </li>
-
-                <li class="mb-4 border-b border-zinc-500 pb-6">
-                    <div class="flex  justify-between flex-grow">
-                        <div class="flex space-x-8">
-
-                            <h1 class="opacity-35">2023/02/11</h1>
-                            <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani</p>
-                            <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
-                        </div>
-                        <a href="./blog.html" class="text-4xl opacity-35 hidden"><i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </li>
-            </ul>
-
-
-        </div>
-
-        <div class="flex justify-center items-center mt-8 mb-8">
-            <button class="text-2xl border border-black w-32 h-12"><a href="./blog-list.html">See all</a></button>
+                </div>
+                <!-- Blog List -->
+                <div class="col-span-3">
+                    <ul class="text-base md:text-2xl bg-white p-4">
+                        <!-- Blog Item -->
+                        <li class="mb-4 border-b border-zinc-500 pb-6">
+                            <div class="flex justify-between items-center">
+                                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                                    <h1 class="opacity-35">2023/02/11</h1>
+                                    <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani
+                                    </p>
+                                    <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
+                                </div>
+                                <a href="./blog.html" class="text-4xl opacity-35 hidden md:block">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="mb-4 border-b border-zinc-500 pb-6">
+                            <div class="flex justify-between items-center">
+                                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                                    <h1 class="opacity-35">2023/02/11</h1>
+                                    <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani
+                                    </p>
+                                    <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
+                                </div>
+                                <a href="./blog.html" class="text-4xl opacity-35 hidden md:block">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="mb-4 border-b border-zinc-500 pb-6">
+                            <div class="flex justify-between items-center">
+                                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                                    <h1 class="opacity-35">2023/02/11</h1>
+                                    <p class="border-2 border-black flex w-12 md:w-24 items-center justify-center">Nani
+                                    </p>
+                                    <a href="./blog.html" class="text-2xl md:text-3xl">Nani category</a>
+                                </div>
+                                <a href="./blog.html" class="text-4xl opacity-35 hidden md:block">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!-- blog-list-end -->
 
-
-
-
     <!-- about -->
-    <div id="About" class="bg-gray-100 pt-16 pb-16">
-        <div class="justify-center items-center grid grid-cols-1">
-            <div class="text-center">
-                <h1 class="text-6xl">About us</h1>
+    <div class="background-brown md:p-24">
+        <div class="p-4">
+            <div class="xl:grid grid-cols-2">
+                <div class="col-span-1 text-white">
+                    <div class="">
+                        <h1 class="text-6xl">About us</h1>
 
-                <div class="text-xl mx-auto" style="width: 80%;">
-                    <p id="paragraph-1" class="mt-12">私たちのサロンは、あなたが本来持っている美しさを最大限に引き出すことを目指しています。</p>
-                    <p id="paragraph-1" class="mt-6">当サロンでは、一人ひとりのお客様に合わせたパーソナライズされたケアを提供し、
-                        心身ともにリフレッシュできる空間を提供します。最新の技術と伝統的な技
-                        法を融合させたトリートメントで、あなたの魅力を引き出し、日常の疲れを忘れさせるよう
-                        な体験をお約束します。</p>
-                    <p id="paragraph-1" class="mt-20">美しさは外見だけではなく、内面からも輝くもの。</p>
-                    <p id="paragraph-1 " class="mt-6">私たちは、あなたが自分自身を愛し、自信を持つお手伝いをします。</p>
+                        <div class="text-xl mx-auto">
+                            <p id="paragraph-1" class="mt-12">私たちのサロンは、あなたが本来持っている美しさを最大限に引き出すことを目指しています。</p>
+                            <p id="paragraph-1" class="mt-6">当サロンでは、一人ひとりのお客様に合わせたパーソナライズされたケアを提供し、
+                                心身ともにリフレッシュできる空間を提供します。最新の技術と伝統的な技
+                                法を融合させたトリートメントで、あなたの魅力を引き出し、日常の疲れを忘れさせるよう
+                                な体験をお約束します。</p>
+                            <p id="paragraph-1" class="mt-20">美しさは外見だけではなく、内面からも輝くもの。</p>
+                            <p id="paragraph-1 " class="mt-6">私たちは、あなたが自分自身を愛し、自信を持つお手伝いをします。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 mt-8 xl:p-4">
+                    <img src="./asserts/menu-tem-1.png" alt="about-item">
                 </div>
             </div>
         </div>
@@ -150,116 +162,121 @@
     <!-- about-end -->
 
     <!-- menu -->
-    <div id="Menu">
-        <h1 class="text-6xl flex justify-center items-center mt-16">Menu</h1>
-        <div class="grid grid-cols-1 md:grid-cols-12 md:pt-16 md:pb-16">
+    <div class="background-brown text-white" id="Menu">
+        <h1 class="text-6xl flex justify-center items-center pt-8">Menu</h1>
 
-            <div class=" col-span-1 p-11"></div>
+        <div class="md:p-24">
+            <div class="p-4">
+                <div class="xl:grid grid-cols-2">
+                    <div class="col-span-1 mt-8 xl:p-4 hidden xl:block">
+                        <img src="./asserts/menu-tem-1.png" alt="about-item" class="mx-auto">
+                    </div>
+                    <div class="col-span-1">
+                        <div class="text-center">
+                            <h1 class="text-6xl mt-6">Cut</h1>
 
-            <!-- left content -->
-            <div class="col-span-4 p-11 hidden md:block">
-                <div class="relative " style="background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./asserts/menu-tem-1.png); background-size: cover; background-position: center; 
-                height: 528px; width: 425.141px; transform: rotate(15deg);">
+                            <div class="text-3xl mx-auto">
+                                <p id="paragraph-1" class="mt-12 border-b border-white">私たちのサロンは、</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 xl:hidden">
+                    <img src="./asserts/menu-tem-1.png" alt="about-item" class="mx-auto">
                 </div>
             </div>
-
-
-            <div class="col-span-1 md:col-span-6">
-                <!-- Card in the center -->
-                <div class="grid justify-center items-center p-4 md:w-60 mx-auto">
-                    <div class="mb-6">
-                        <div class="overflow-hidden relative rounded-md flex flex-col justify-center items-center">
-                            <img src="./asserts/menu-tem-1.png" alt="item 1"
-                                class="w-full sm:h-32 object-cover rounded-md">
-                        </div>
-                        <div class="flex justify-between mt-4 items-center">
-                            <h2 class="text-3xl">Cut</h2>
-                            <h2>5000-</h2>
-                        </div>
-                        <p class="text-sm mt-4">長年の経験によって磨かれた確実な技術によってお客様を満足させるヘアスタイルとカットを提供しております。</p>
-                    </div>
-
-                    <div class="md:hidden mb-6">
-                        <div class="overflow-hidden relative rounded-md flex flex-col justify-center items-center">
-                            <img src="./asserts/menu-tem-1.png" alt="item 1"
-                                class="w-full sm:h-32 object-cover rounded-md">
-                        </div>
-                        <div class="flex justify-between mt-4 items-center">
-                            <h2 class="text-3xl">Cut</h2>
-                            <h2>5000-</h2>
-                        </div>
-                        <p class="text-sm mt-4">長年の経験によって磨かれた確実な技術によってお客様を満足させるヘアスタイルとカットを提供しております。</p>
-                    </div>
-
-                    <div class="md:hidden">
-                        <div class="overflow-hidden relative rounded-md flex flex-col justify-center items-center">
-                            <img src="./asserts/menu-tem-1.png" alt="item 1"
-                                class="w-full sm:h-32 object-cover rounded-md">
-                        </div>
-                        <div class="flex justify-between mt-4 items-center">
-                            <h2 class="text-3xl">Cut</h2>
-                            <h2>5000-</h2>
-                        </div>
-                        <p class="text-sm mt-4">長年の経験によって磨かれた確実な技術によってお客様を満足させるヘアスタイルとカットを提供しております。</p>
-                    </div>
-
-                </div>
-
-
-                <!-- Flexed container for the next line of cards -->
-                <div class="hidden md:flex justify-center mt-12 gap-12">
-                    <div class="grid justify-center items-center w-56">
-                        <div class="overflow-hidden relative rounded-md">
-                            <img src="./asserts/menu-tem-1.png" alt="item 1"
-                                class="w-full sm:h-32 object-cover rounded-md">
-                        </div>
-                        <div class="flex justify-between mt-4 items-center">
-                            <h2 class="text-3xl">Cut</h2>
-                            <h2>5000-</h2>
-                        </div>
-                        <p class="text-sm mt-4">長年の経験によって磨かれた確実な技術によってお客様を満足させるヘアスタイルとカットを提供しております。</p>
-                    </div>
-
-                    <div class="grid justify-center items-center w-56">
-                        <div class="overflow-hidden relative rounded-md">
-                            <img src="./asserts/menu-tem-1.png" alt="item 1"
-                                class="w-full sm:h-32 object-cover rounded-md">
-                        </div>
-                        <div class="flex justify-between mt-4 items-center">
-                            <h2 class="text-3xl">Cut</h2>
-                            <h2>5000-</h2>
-                        </div>
-                        <p class="text-sm mt-4">長年の経験によって磨かれた確実な技術によってお客様を満足させるヘアスタイルとカットを提供しております。</p>
-                    </div>
-                </div>
-
-                <div class="flex justify-center items-center mt-20">
-                    <button class="text-2xl border border-black w-32 h-12">See all</button>
-                </div>
-            </div>
-
         </div>
+
+        <div class="md:p-24">
+            <div class="p-4">
+                <div class="xl:grid grid-cols-2">
+                    <div class="col-span-1">
+                        <div class="text-center">
+                            <h1 class="text-6xl mt-6">Color & Parm</h1>
+
+                            <div class="text-3xl mx-auto">
+                                <p id="paragraph-1" class="mt-12 border-b border-white">私たちのサロンは、</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                                <p id="paragraph-1 " class="mt-6 border-b border-white">5000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 mt-8 xl:p-4">
+                        <img src="./asserts/menu-tem-1.png" alt="about-item">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:p-24">
+            <div class="p-4">
+                <div class="xl:grid grid-cols-2">
+                    <div class="col-span-1 mt-8 xl:p-4">
+                        <img src="./asserts/menu-tem-1.png" alt="about-item">
+                    </div>
+                    <div class="col-span-1">
+                        <div class="text-center">
+                            <h1 class="text-6xl mt-6">Color & Parm</h1>
+
+                            <div class="text-3xl mx-auto">
+                                <p id="paragraph-1" class="mt-12 border-b border-white">私たちのサロンは、</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                                <p id="paragraph-1 " class="mt-6 border-b border-white">5000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:p-24">
+            <div class="p-4">
+                <div class="xl:grid grid-cols-2">
+                    <div class="col-span-1">
+                        <div class="text-center">
+                            <h1 class="text-6xl mt-6">Color & Parm</h1>
+
+                            <div class="text-3xl mx-auto">
+                                <p id="paragraph-1" class="mt-12 border-b border-white">私たちのサロンは、</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                                <p id="paragraph-1" class="mt-6 border-b border-white">5000</p>
+                                <p id="paragraph-1 " class="mt-6 border-b border-white">5000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 mt-8 xl:p-4">
+                        <img src="./asserts/menu-tem-1.png" alt="about-item">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- menu-end -->
 
 
     <!-- map -->
-    <div id="Access">
-        <div class="grid grid-col-1 md:grid-cols-12 pt-16 pb-16">
+    <div id="Access" class="background-brown text-white">
+        <div class="grid grid-col-1 md:grid-cols-1 pt-16 pb-16">
 
             <div class="col-span-1 md:p-11"></div>
 
             <!-- left content -->
-            <div class="col-span-1 md:col-span-4 p-4 md:p-11">
+            <div class="col-span-1 md:col-span-1 md:p-12">
                 <h1 class="text-4xl md:text-6xl text-center mb-6">Access</h1>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2201.4800510757295!2d69.53226130457813!3d41.31090893073936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae562bbe77afe1%3A0x8f8c8c8697755afd!2s8G6J%2BM2G%2C%20Yangibazar%2C%20Tashkent%20Region%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1715661627978!5m2!1sen!2s"
                     width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" class="xl:pr-96 xl:pl-96"></iframe>
             </div>
 
             <!-- right content -->
-            <div class="col-span-1 p-4 md:col-span-6 mt-12 md:mt-32">
+            <div class="col-span-1 p-4 md:col-span-1 mt-12 md:mt-32">
                 <!-- Flexed container for the next line of cards -->
                 <div class="grid mmd:t-12 md:gap-12">
                     <ul class="text-xl">
@@ -304,7 +321,7 @@
 
 
     <!-- reservation -->
-    <div id="Booking" class="bg-black text-white pt-16 pb-6 md:pt-16 md:pb-16">
+    <div id="Booking" class="bg-white text-black pt-16 pb-6 md:pt-16 md:pb-16">
         <div class="">
             <h1 class="text-6xl text-center mb-6">Reservation</h1>
             <p class="text-center mt-12 text-lg">ご予約について</p>
@@ -312,10 +329,10 @@
             <p class="text-center text-lg mt-1">お急ぎの場合はお電話でご予約ください。</p>
             <div class="text-center mt-8">
                 <button type="button"
-                    class="text-sm border border-white text-white rounded-3xl md:mr-8 p-3 md:pr-8 md:pl-8"><a
+                    class="text-sm border border-black text-black rounded-3xl md:mr-8 p-3 md:pr-8 md:pl-8"><a
                         href="#form">ネットで予約</a></button>
                 <button type="button"
-                    class="text-sm border border-white text-white rounded-3xl md:mr-8 p-3 md:pr-8 md:pl-8"><i
+                    class="text-sm border border-black text-black rounded-3xl md:mr-8 p-3 md:pr-8 md:pl-8"><i
                         class="fa-solid fa-phone"></i><a href="tel:123-456-7890">123-456-7890</a></button>
 
             </div>
@@ -324,7 +341,7 @@
     <!-- reservation-end -->
 
     <!-- form -->
-    <div class="bg-black md:pt-12 md:pb-12 md:pl-36 md:pr-36 font-sans" id="form">
+    <div class="bg-white text-black md:pt-12 md:pb-12 md:pl-36 md:pr-36 font-sans" id="form">
 
         <form class="bg-white p-4 max-w-xl mx-auto md:max-w-2xl md:p-8" onsubmit="redirectToPage(event)">
             <div class="text-center mb-8 mt-8 md:mt-4 text-6xl">
@@ -359,43 +376,36 @@
     </div>
     <!-- form-end -->
 
+    
     <!-- footer -->
-    <div class="px-8 py-8 text-white bg-[#615E5F]">
-        <div class="grid gap-8 md:grid-cols-3 md:gap-32">
-            <div class="md:col-span-1">
-                <h1 class="text-4xl md:text-6xl mt-4 md:mt-12">Logo</h1>
-            </div>
-            <div class="md:col-span-1">
-                <div class="grid grid-cols-2 sm:grid-cols-4 text-xl md:text-3xl">
-                    <h1 class="mt-4">Menu</h1>
-                    <h1 class="mt-4">Blog</h1>
-                    <h1 class="mt-4">Gallery</h1>
-                    <h1 class="mt-4">Faq</h1>
-                    <h1 class="mt-4">Menu</h1>
-                    <h1 class="mt-4">Blog</h1>
-                    <h1 class="mt-4">Gallery</h1>
-                    <h1 class="mt-4">Faq</h1>
-                    <h1 class="mt-4">Menu</h1>
-                    <h1 class="mt-4">Blog</h1>
-                    <h1 class="mt-4">Gallery</h1>
-                    <h1 class="mt-4">Faq</h1>
-                    <h1 class="mt-4">Menu</h1>
-                    <h1 class="mt-4">Blog</h1>
-                    <h1 class="mt-4">Gallery</h1>
-                    <h1 class="mt-4">Faq</h1>
-                </div>
-            </div>
-            <div class="md:col-span-1 text-sm md:text-lg">
-                <div class="mt-4">
-                    <a href="">プライバシーポリシー</a>
-                </div>
-                <div class="mt-4 md:mt-12">
-                    <h1>Copyright © Logo, Inc., All rights reserved.</h1>
-                </div>
-            </div>
+    <footer class="bg-black p-24">
+        <div class="container footer_part">
+            <h2 class="text-white font-poly text-3xl">横浜料理店</h2>
+            <ul class="grid grid-cols-4 md:grid-cols-4 gap-y-5 mt-6">
+                <li class="text-white font-poly text-base">Menu</li>
+                <li class="text-white font-poly text-base">Menu</li>
+                <li class="text-white font-poly text-base">Menu</li>
+                <li class="text-white font-poly text-base">Menu</li>
+                <li class="text-white font-poly text-base">Blog</li>
+                <li class="text-white font-poly text-base">Blog</li>
+                <li class="text-white font-poly text-base">Blog</li>
+                <li class="text-white font-poly text-base">Blog</li>
+                <li class="text-white font-poly text-base">Menu</li>
+                <li class="text-white font-poly text-base">Menu</li>
+                <li class="text-white font-poly text-base">Menu</li>
+                <li class="text-white font-poly text-base">Menu</li>
+                <li class="text-white font-poly text-base">Blog</li>
+                <li class="text-white font-poly text-base">Blog</li>
+                <li class="text-white font-poly text-base">Blog</li>
+                <li class="text-white font-poly text-base">Blog</li>
+                
+            </ul>
+            <button class="py-1 px-6 rounded-full bg-red-800 text-white text-xs md:text-base mt-6">ご予約はこちら</button>
         </div>
-    </div>
+    </footer>
     <!-- footer-end -->
+
+    
 
     <!-- google maps -->
     <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
