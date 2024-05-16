@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0e35ab6147.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+    <style>
+        .font-zen-maru-gothic {
+            font-family: "Zen Maru Gothic", cursive;
+        }
+
+        .menu-transition {
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="font-ooh-baby">
+    <!-- nav -->
+    <nav class="p-6 bg-black text-white shadow-md">
+        <div class="flex items-center justify-between">
+            <!-- Logo on the Left -->
+            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse ml-4 xl:ml-32">
+
+                <h1 class="text-3xl xl:text-6xl">Logo</h1>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="hidden items-center relative xl:flex" id="menu">
+                <div
+                    class="flex flex-col xl:flex-row xl:items-center xl:space-x-16 text-xl xl:text-3xl text-center xl:text-left">
+                    <h1 class="mt-4 xl:mt-0"><a href="./blog-list.html">Blog</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#About">About us</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#Menu">Menu</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#Access">Access</a></h1>
+                </div>
+
+                <div class="flex flex-col xl:flex-row items-center space-x-0 xl:space-x-12 mt-4 xl:mt-0">
+                    <div class="xl:bg-white xl:w-1 xl:h-12 hidden xl:block xl:ml-12"></div>
+
+
+                    <button type="button" class="text-lg bg-red-800 text-white py-2 px-8 rounded-3xl mt-4 xl:mt-0">
+                        <a href="http://127.0.0.1:5500/index.html#Booking" class="text-lg">ご予約はこちら</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Burger Icon on the Right for Mobile -->
+            <i class="fa-solid fa-bars text-xl xl:hidden px-4 cursor-pointer" id="burger"></i>
+        </div>
+
+    </nav>
+    <!-- nav end -->
+
+
+    <!-- image section -->
+    <div class="relative w-full "
+        style="background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./asserts/salon_3.png); background-size: cover; background-position: center; height: 25vh;">
+        <div class="absolute inset-0 flex justify-center">
+            <p class="text-6xl md:text-8xl text-black mt-16">Thanks</p>
+        </div>
+    </div>
+    <!-- image section end -->
+
+
+    <!-- blog-content -->
+    <div class="p-6 md:pt-12 md:pb-12 md:pl-36 md:pr-36 justify-center items-center">
+
+        <h1 class="text-2xl md:text-5xl mt-6 text-center">お問い合わせいただきありがとうございます</h1>
+
+        <div class="text-center mt-16">
+            <p>確認のためにお客様に自動返信メールをお送りしております。</p>
+            <p class="mt-2">万が一、自動返信メールが届かない場合はお手数ですがお電話にてお問い合わせください。</p>
+        </div>
+
+        <div class="text-center items-center mt-8 mb-8">
+            <button class="text-2xl border border-black w-32 h-12">TOPへ戻る</button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="text-white p-24" style="background: var(--green1, #A3B091);">
+        <div class="container footer_part">
+            <h2 class="text-3xl">LOGO</h2>
+            <ul class="grid grid-cols-4 md:grid-cols-4 gap-y-5 mt-6">
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Blog</li>
+                <li>Blog</li>
+                <li>Blog</li>
+                <li>Blog</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Blog</li>
+                <li>Blog</li>
+                <li>Blog</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
