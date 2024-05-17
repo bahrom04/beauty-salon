@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Salon keyword">
+    <meta name="description" content="The website description">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:site_name" content="example.com">
+    <meta property="og:type" content="website" />
+    <meta name="twitter:site" content="@ubuntu" />
+
     <title>Salon Name</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,17 +34,18 @@
 
 <body class="font-zen-maru-gothic">
 
+
+
     <!-- nav -->
-    <nav class="p-6 bg-black text-white shadow-md">
+    <nav class="p-6 bg-black text-black shadow-md z-50" style="background: var(--bg_green, #EEF3E9);">
         <div class="flex items-center justify-between">
             <!-- Logo on the Left -->
             <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse ml-4 xl:ml-32">
-
                 <h1 class="text-3xl xl:text-6xl">Logo</h1>
             </a>
 
             <!-- Navigation Links -->
-            <div class="hidden items-center relative xl:flex" id="menu">
+            <div class="hidden items-center relative xl:flex" id="menu-links">
                 <div
                     class="flex flex-col xl:flex-row xl:items-center xl:space-x-16 text-xl xl:text-3xl text-center xl:text-left">
                     <h1 class="mt-4 xl:mt-0"><a href="./blog-list.html">Blog</a></h1>
@@ -47,10 +55,8 @@
                 </div>
 
                 <div class="flex flex-col xl:flex-row items-center space-x-0 xl:space-x-12 mt-4 xl:mt-0">
-                    <div class="xl:bg-white xl:w-1 xl:h-12 hidden xl:block xl:ml-12"></div>
-
-
-                    <button type="button" class="text-lg bg-red-800 text-white py-2 px-8 rounded-3xl mt-4 xl:mt-0">
+                    <div class="xl:bg-black xl:w-1 xl:h-12 hidden xl:block xl:ml-12"></div>
+                    <button type="button" class="text-lg py-2 px-8 rounded-3xl border-green-800 mt-4 xl:mt-0" style="background: var(--bg_green, #EEF3E9);">
                         <a href="http://127.0.0.1:5500/index.html#Booking" class="text-lg">ご予約はこちら</a>
                     </button>
                 </div>
@@ -59,20 +65,20 @@
             <!-- Burger Icon on the Right for Mobile -->
             <i class="fa-solid fa-bars text-xl xl:hidden px-4 cursor-pointer" id="burger"></i>
         </div>
-
     </nav>
     <!-- nav end -->
 
-
-
     <!-- image section -->
     <div class="relative w-full"
-        style="background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(./asserts/salon_3.png); background-size: cover; background-position: center; height: 90vh;">
+        style="background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(./asserts/salon_3.png); background-size: cover; background-position: center; height: 100vh;">
+
         <div class="absolute inset-0 flex items-center justify-center p-6">
             <p class="text-6xl xl:text-9xl lg:text-9xl text-white text-center">Salon Name</p>
         </div>
     </div>
     <!-- image section end -->
+
+
 
     <!-- blog list -->
     <div class="grid">
@@ -125,7 +131,8 @@
         </div>
 
         <div class="flex justify-center items-center mt-8 mb-8">
-            <button class="text-2xl border border-green-700 text-green-700 p-4 rounded-3xl"><a href="./blog-list.html">お知らせ一覧はこちら</a></button>
+            <button class="text-2xl border border-green-700 text-green-700 p-4 rounded-3xl"><a
+                    href="./blog-list.html">お知らせ一覧はこちら</a></button>
         </div>
     </div>
     <!-- blog-list-end -->
@@ -141,19 +148,19 @@
                         <div class="rounded-3xl mt-8">
                             <img class="rounded-3xl block w-full" src="./asserts/menu-tem-1.png" alt="about-item">
                         </div>
-                        
+
 
                     </div>
                 </div>
                 <div class="col-span-1 mt-8 xl:p-4">
                     <div class="text-xl mx-auto">
                         <p id="paragraph-1" class="mt-12">私たちのサロンは、あなたが本来持っている美しさを最大限に引き出すことを目指しています。</p>
-                        <p id="paragraph-1" class="mt-6">当サロンでは、一人ひとりのお客様に合わせたパーソナライズされたケアを提供し、
+                        <p id="paragraph-2" class="mt-6">当サロンでは、一人ひとりのお客様に合わせたパーソナライズされたケアを提供し、
                             心身ともにリフレッシュできる空間を提供します。最新の技術と伝統的な技
                             法を融合させたトリートメントで、あなたの魅力を引き出し、日常の疲れを忘れさせるよう
                             な体験をお約束します。</p>
-                        <p id="paragraph-1" class="mt-20">美しさは外見だけではなく、内面からも輝くもの。</p>
-                        <p id="paragraph-1 " class="mt-6">私たちは、あなたが自分自身を愛し、自信を持つお手伝いをします。</p>
+                        <p id="paragraph-3" class="mt-20">美しさは外見だけではなく、内面からも輝くもの。</p>
+                        <p id="paragraph-4" class="mt-6">私たちは、あなたが自分自身を愛し、自信を持つお手伝いをします。</p>
                     </div>
                 </div>
             </div>
@@ -186,7 +193,7 @@
                         <p class="text-center text-2xl mt-6 mb-6">ヘアースタイリング・総合料金案内</p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 const burger = document.querySelector("#burger");
-const menu = document.querySelector("#menu");
+const menu = document.querySelector("#menu-links");
 
 burger.addEventListener("click", () => {
     if (menu.classList.contains("hidden")) {
