@@ -32,30 +32,27 @@
 <body class="font-poly">
 
     <!-- nav -->
-    <nav class="p-6 bg-black text-white shadow-md">
+    <nav class="p-6 text-black shadow-md z-50 top-0 sticky bg-white opacity-90">
         <div class="flex items-center justify-between">
             <!-- Logo on the Left -->
             <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse ml-4 xl:ml-32">
-
-                <h1 class="text-3xl xl:text-6xl">Logo</h1>
+                <h1 class="text-xl">●●株式会社
+                </h1>
             </a>
 
             <!-- Navigation Links -->
-            <div class="hidden items-center relative xl:flex" id="menu">
+            <div class="hidden items-center relative xl:flex" id="menu-links">
                 <div
-                    class="flex flex-col xl:flex-row xl:items-center xl:space-x-16 text-xl xl:text-3xl text-center xl:text-left">
-                    <h1 class="mt-4 xl:mt-0"><a href="./blog-list.html">Blog</a></h1>
-                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#About">About us</a></h1>
-                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#Menu">Menu</a></h1>
-                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#Access">Access</a></h1>
+                    class="flex flex-col xl:flex-row xl:items-center xl:space-x-16 text-xl xl:text-xl text-center xl:text-left xl:mr-16">
+                    <h1 class="mt-4 xl:mt-0"><a href="./blog-list.html">会社概要</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#About">サービス</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#Menu">お知らせ</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#Access">アクセス</a></h1>
                 </div>
 
                 <div class="flex flex-col xl:flex-row items-center space-x-0 xl:space-x-12 mt-4 xl:mt-0">
-                    <div class="xl:bg-white xl:w-1 xl:h-12 hidden xl:block xl:ml-12"></div>
-
-
-                    <button type="button" class="text-lg bg-red-800 text-white py-2 px-8 rounded-3xl mt-4 xl:mt-0">
-                        <a href="http://127.0.0.1:5500/index.html#Booking" class="text-lg">ご予約はこちら</a>
+                    <button type="button" class="text-lg py-2 px-8 rounded-3xl mt-4 xl:mt-0 bg-blue-900 text-white">
+                        <a href="http://127.0.0.1:5500/index.html#Booking" class="xl:text-xl">お問い合わせ</a>
                     </button>
                 </div>
             </div>
@@ -63,7 +60,6 @@
             <!-- Burger Icon on the Right for Mobile -->
             <i class="fa-solid fa-bars text-xl xl:hidden px-4 cursor-pointer" id="burger"></i>
         </div>
-
     </nav>
     <!-- nav end -->
 
@@ -103,32 +99,24 @@
                     テキスト本文が入ります。テキスト本文が入ります。テキスト本文が入ります。テキスト本文
                     が入ります。テキスト本文が入ります。テキスト本文が入ります。</p>
             </div>
+
+            <div class="flex justify-center items-center mt-8 mb-8">
+                <button class="bg-blue-900 text-white text-2xl border border-black rounded-3xl w-36 h-12">TOPへ戻る</button>
+            </div>
         </div>
     </div>
     <!-- blog-content-end -->
 
     <!-- footer -->
-    <footer class="text-white p-24" style="background: var(--green1, #A3B091);">
-        <div class="container footer_part">
-            <h2 class="text-3xl">LOGO</h2>
-            <ul class="grid grid-cols-4 md:grid-cols-4 gap-y-5 mt-6">
-                <li>Menu</li>
-                <li>Menu</li>
-                <li>Menu</li>
-                <li>Menu</li>
-                <li>Blog</li>
-                <li>Blog</li>
-                <li>Blog</li>
-                <li>Blog</li>
-                <li>Menu</li>
-                <li>Menu</li>
-                <li>Menu</li>
-                <li>Menu</li>
-                <li>Blog</li>
-                <li>Blog</li>
-                <li>Blog</li>
-                <li>Blog</li>
-            </ul>
+    <footer class="text-white bg-blue-900 p-4 xl:pr-40 xl:pl-40 xl:pt-5 xl:pb-5 text-center">
+        <div class="">
+            <div>
+                <p>〒220-8121　</p>
+                <p>神奈川県横浜市西区みなとみらい二丁目2番1号 横浜ランドマークタワー21階</p>
+                <p>045-264-6322</p>
+            </div>
+            <p class="mt-2">@2024 ●●株式会社</p>
+
         </div>
     </footer>
     <!-- footer-end -->
